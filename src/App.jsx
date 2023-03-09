@@ -1,12 +1,7 @@
 import { useState } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home/Home.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return <Home />;
 }
 

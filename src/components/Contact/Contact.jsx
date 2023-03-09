@@ -1,9 +1,12 @@
 import React from "react";
+import "./Contact.scss";
 
-export const Contact = () => {
+const Contact = () => {
   return (
     <footer>
       <p>CodeNected &copy; 2023</p>
     </footer>
   );
 };
+
+export default Contact;

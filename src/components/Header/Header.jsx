@@ -1,7 +1,7 @@
-import "Header.scss";
+import "./Header.scss";
 import React from "react";
 
-export const Header = () => {
+const Header = () => {
   return (
     <header class="header">
       <img class="header__img" src="" alt="Codenected Logo" />
@@ -27,3 +27,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;
