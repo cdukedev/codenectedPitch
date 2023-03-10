@@ -12,6 +12,7 @@ import SlideTwo from "../Slides/SlideTwo/SlideTwo";
 import SlideThree from "../Slides/SlideThree/SlideThree";
 import SlideFour from "../Slides/SlideFour/SlideFour";
 import SlideFive from "../Slides/SlideFive/SlideFive";
+import SlideSix from "../Slides/SlideSix/SlideSix";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -82,7 +83,7 @@ export default function FullWidthTabs() {
           <Tab label="How We Help" {...a11yProps(2)} />
           <Tab label="Market" {...a11yProps(3)} />
           <Tab label="Competition" {...a11yProps(4)} />
-          <Tab label="ProtoTypes/WireFrames" {...a11yProps(5)} />
+          <Tab label="ProtoTypes & WireFrames" {...a11yProps(5)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0} dir={theme.direction}>
@@ -101,7 +102,7 @@ export default function FullWidthTabs() {
         Prototype
       </TabPanel>
       <TabPanel value={value} index={5} dir={theme.direction}>
-        <SlideFive />
+        <SlideSix />
       </TabPanel>
     </Box>
   );
