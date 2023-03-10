@@ -1,25 +1,21 @@
 import "./Header.scss";
 import React from "react";
+import logo from "../../assets/logos/logo.png";
 
 const Header = () => {
   return (
-    <header class="header">
-      <img class="header__img" src="" alt="Codenected Logo" />
-      <nav class="header__nav">
-        <ul class="header__links">
-          <li>
-            <a class="header__link" href="index.html">
+    <header className="header">
+      <img className="header__img" src={logo} alt="Codenected Logo" />
+      <nav className="header__nav">
+        <ul className="header__list-items">
+          <li className="header__list-item">
+            <a className="header__list-item-link" href="index.html">
               Home
             </a>
           </li>
-          <li>
-            <a class="header__link" href="about.html">
+          <li className="header__list-item">
+            <a className="header__list-item-link" href="about.html">
               About
-            </a>
-          </li>
-          <li>
-            <a class="header__link" href="contact.html">
-              Contact
             </a>
           </li>
         </ul>

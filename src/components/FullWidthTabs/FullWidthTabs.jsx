@@ -1,12 +1,17 @@
 import * as React from "react";
+import "./FullWidthTabs.scss";
 import PropTypes from "prop-types";
-import SwipeableViews from "react-swipeable-views";
 import { useTheme } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import SlideOne from "../Slides/SlideOne/SlideOne";
+import SlideTwo from "../Slides/SlideTwo/SlideTwo";
+import SlideThree from "../Slides/SlideThree/SlideThree";
+import SlideFour from "../Slides/SlideFour/SlideFour";
+import SlideFive from "../Slides/SlideFive/SlideFive";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -54,36 +59,50 @@ export default function FullWidthTabs() {
   };
 
   return (
-    <Box sx={{ bgcolor: "background.paper", width: 500 }}>
+    <Box
+      sx={{
+        bgcolor: "background.paper",
+        width: "100vw",
+      }}
+    >
       <AppBar position="static">
         <Tabs
           value={value}
           onChange={handleChange}
+          width="100vw"
+          justifyContent="center"
+          alignContent="center"
           indicatorColor="secondary"
           textColor="inherit"
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Mission" {...a11yProps(0)} />
+          <Tab label="Who We Help" {...a11yProps(1)} />
+          <Tab label="How We Help" {...a11yProps(2)} />
+          <Tab label="Market" {...a11yProps(3)} />
+          <Tab label="Competition" {...a11yProps(4)} />
+          <Tab label="ProtoTypes/WireFrames" {...a11yProps(5)} />
         </Tabs>
       </AppBar>
-      <SwipeableViews
-        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-        index={value}
-        onChangeIndex={handleChangeIndex}
-      >
-        <TabPanel value={value} index={0} dir={theme.direction}>
-          Item One
-        </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two
-        </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
-        </TabPanel>
-      </SwipeableViews>
+      <TabPanel value={value} index={0} dir={theme.direction}>
+        <SlideOne />
+      </TabPanel>
+      <TabPanel value={value} index={1} dir={theme.direction}>
+        <SlideTwo />
+      </TabPanel>
+      <TabPanel value={value} index={2} dir={theme.direction}>
+        Component 3
+      </TabPanel>
+      <TabPanel value={value} index={3} dir={theme.direction}>
+        Component 4
+      </TabPanel>
+      <TabPanel value={value} index={4} dir={theme.direction}>
+        Prototype
+      </TabPanel>
+      <TabPanel value={value} index={5} dir={theme.direction}>
+        <SlideFive />
+      </TabPanel>
     </Box>
   );
 }

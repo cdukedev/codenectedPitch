@@ -3,7 +3,7 @@ import "./Contact.scss";
 
 const Contact = () => {
   return (
-    <footer>
+    <footer className="contact">
       <p>CodeNected &copy; 2023</p>
     </footer>
   );
