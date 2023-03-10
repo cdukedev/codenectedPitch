@@ -90,20 +90,35 @@ const SlideTwo = () => {
           odio eius officia distinctio!Lorem
         </section>
       ) : problem === "Non-Profits" ? (
-        <section className="main__right">Non Profit Problems</section>
+        <section className="main__right">
+          <button onClick={() => setProblem("")}>Main Problem</button>
+          <p>Non Profit Problems</p>
+        </section>
       ) : problem === "Students" ? (
-        <section className="main__right">Students Problems</section>
+        <section className="main__right">
+          <button onClick={() => setProblem("")}>Main Problem</button>
+          <p>Students Problems</p>
+        </section>
       ) : problem === "Bootcamps" ? (
-        <section className="main__right">Bootcamps Problems</section>
+        <section className="main__right">
+          <button onClick={() => setProblem("")}>Main Problem</button>
+          <p>Bootcamps Problems</p>
+        </section>
       ) : problem === "Small-Businesses" ? (
-        <section className="main__right">Small Businesses Problems</section>
+        <section className="main__right">
+          <button onClick={() => setProblem("")}>Main Problem</button>
+          <p>Small Businesses Problems</p>
+        </section>
       ) : (
         <section className="main__right">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus vitae
-          delectus tempore voluptatem? Doloremque totam a id ut. Assumenda, quos
-          at dolorum accusantium aliquam numquam cupiditate fugit veritatis rem
-          necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Quo libero aliquid quis nisi repellat veritatis, labore amet
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+            vitae delectus tempore voluptatem? Doloremque totam a id ut.
+            Assumenda, quos at dolorum accusantium aliquam numquam cupiditate
+            fugit veritatis rem necessitatibus. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quo libero aliquid quis nisi repellat
+            veritatis, labore amet
+          </p>
         </section>
       )}
     </main>
