@@ -1,7 +1,7 @@
 import React from "react";
-import "./Student.scss";
+import "./Bootcamp.scss";
 import image from "../../../assets/images/student-persona.png";
-import studentData from "../../../data/personas/students.json";
+import studentData from "../../../data/personas/bootcamps.json";
 
 const Student = () => {
   const {

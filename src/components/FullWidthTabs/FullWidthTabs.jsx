@@ -13,6 +13,7 @@ import SlideThree from "../Slides/SlideThree/SlideThree";
 import SlideFour from "../Slides/SlideFour/SlideFour";
 import SlideFive from "../Slides/SlideFive/SlideFive";
 import SlideSix from "../Slides/SlideSix/SlideSix";
+import image from "../../assets/images/space.gif";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -86,7 +87,11 @@ export default function FullWidthTabs() {
           <Tab label="ProtoTypes & WireFrames" {...a11yProps(5)} />
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index={0} dir={theme.direction}>
+      <TabPanel
+        value={value}
+        index={0}
+        dir={theme.direction}
+      >
         <SlideOne />
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>

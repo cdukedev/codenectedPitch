@@ -7,6 +7,8 @@ import CardActionArea from "@mui/material/CardActionArea";
 import image from "../../../assets/images/test.png";
 import { useState } from "react";
 import Student from "../../Persona/Student/Student.jsx";
+import NonProfit from "../../Persona/NonProfit/NonProfit.jsx";
+import Bootcamp from "../../Persona/Bootcamp/Bootcamp.jsx";
 
 const SlideTwo = () => {
   const [problem, setProblem] = useState("Main");
@@ -81,29 +83,35 @@ const SlideTwo = () => {
       </Box>
 
       {problem === "Main" ? (
-        <section className="main__right">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus vitae
-          delectus tempore voluptatem? Doloremque totam a id ut. Assumenda, quos
-          at dolorum accusantium aliquam numquam cupiditate fugit veritatis rem
-          necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Quo libero aliquid quis nisi repellat veritatis, labore amet
-          aliquam repellendus vel voluptatibus at dolore earum eligendi fugiat
-          odio eius officia distinctio!Lorem
+        <section className="main__right-main">
+          <p className="main__right-main-text">
+            The technology industry is constantly evolving and growing, but not
+            everyone has equal access to the resources and opportunities to
+            participate in this growth. This disparity affects not only
+            individuals but also small businesses and non-profit organizations
+            in under-served communities, who struggle to keep up with the rapid
+            pace of technological advancements. Meanwhile, students interested
+            in pursuing a career in technology face a number of challenges,
+            including a lack of experience in real-world tech projects and
+            difficulty finding meaningful opportunities to gain experience.
+            This, in turn, affects their ability to build a desirable resume and
+            to make a positive impact in the world.
+          </p>
         </section>
       ) : problem === "Non-Profits" ? (
         <section className="main__right">
           <button onClick={() => setProblem("")}>Main Problem</button>
-          <p>Non Profit Problems</p>
+          <NonProfit />
         </section>
       ) : problem === "Students" ? (
         <section className="main__right">
           <button onClick={() => setProblem("")}>Main Problem</button>
-          <Student/>
+          <Student />
         </section>
       ) : problem === "Bootcamps" ? (
         <section className="main__right">
           <button onClick={() => setProblem("")}>Main Problem</button>
-          <p>Bootcamps Problems</p>
+          <Bootcamp />
         </section>
       ) : problem === "Small-Businesses" ? (
         <section className="main__right">
@@ -111,14 +119,19 @@ const SlideTwo = () => {
           <p>Small Businesses Problems</p>
         </section>
       ) : (
-        <section className="main__right">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
-            vitae delectus tempore voluptatem? Doloremque totam a id ut.
-            Assumenda, quos at dolorum accusantium aliquam numquam cupiditate
-            fugit veritatis rem necessitatibus. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quo libero aliquid quis nisi repellat
-            veritatis, labore amet
+        <section className="main__right-main">
+          <p className="main__right-main-text">
+            The technology industry is constantly evolving and growing, but not
+            everyone has equal access to the resources and opportunities to
+            participate in this growth. This disparity affects not only
+            individuals but also small businesses and non-profit organizations
+            in under-served communities, who struggle to keep up with the rapid
+            pace of technological advancements. Meanwhile, students interested
+            in pursuing a career in technology face a number of challenges,
+            including a lack of experience in real-world tech projects and
+            difficulty finding meaningful opportunities to gain experience.
+            This, in turn, affects their ability to build a desirable resume and
+            to make a positive impact in the world.
           </p>
         </section>
       )}

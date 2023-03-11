@@ -2,12 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
     padding: 1rem 1rem;
     top: 0;
     background-color: rgb(1, 24, 39); /* Set a background color to ensure the sticky header is visible */
     z-index: 1; /* Set a z-index to ensure the sticky header is displayed above other elements */
-    height: 6rem;
+    height: 11vh;
     &__img {
       margin-right: 1rem;
       margin-top: 2rem;

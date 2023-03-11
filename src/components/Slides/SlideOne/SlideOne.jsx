@@ -3,19 +3,28 @@ import "./SlideOne.scss";
 
 const SlideOne = () => {
   return (
-    <section className="c">
-      <h1 className="slide-one__title">Mission Driven</h1>
-      <div className="slide-one__text-container">
-        <p className="slide-one__text">
-          At Codenected, our mission is to provide individuals and communities
-          access to resources, mentorship, and collaboration opportunities in
-          technology, breaking down barriers and fostering a diverse and
-          inclusive platform for tech students and enthusiasts. Our aim is to
-          accelerate technology's growth for society's betterment and make it
-          easier for everyone to contribute to the tech industry. We connect
-          individuals with varying backgrounds, experiences, and skills, giving
-          them the tools through our platform to bring their ideas to life.
-        </p>
+    <section className="contained">
+      <div className="top">
+        <h1 className="slide-one__title">Mission Driven</h1>
+        <div className="slide-one__text-container">
+          <p className="slide-one__text">
+            At Codenected, we are driven by a passion for technology and a
+            desire to unite and empower people and communities. Our mission is
+            to create a replicable platform where students, organizations, and
+            the local population can collaborate to build, learn, and positively
+            impact the lives of their families, friends, coworkers, and
+            neighbors. We have the potential to break down the barriers that
+            prevent people from utilizing the total value of tech and make it
+            easier for everyone to contribute to the ways technology may have a
+            more significant impact on local and scales and replicate these
+            results globally. We are dedicated to fostering a diverse and
+            inclusive community where individuals from all backgrounds can
+            connect and work together to create a better future.
+          </p>
+        </div>
+      </div>
+      <div className="bottom">
+        <h1 className="slide-one__title">Current Vision</h1>
         <p className="slide-one__text">
           With a focus on empowering students in South Florida, our team is on a
           quest to bridge the gap between the wealth of talent in the student
