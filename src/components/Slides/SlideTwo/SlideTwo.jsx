@@ -6,6 +6,7 @@ import Grid from "@mui/material/Grid";
 import CardActionArea from "@mui/material/CardActionArea";
 import image from "../../../assets/images/test.png";
 import { useState } from "react";
+import Student from "../../Persona/Student/Student.jsx";
 
 const SlideTwo = () => {
   const [problem, setProblem] = useState("Main");
@@ -97,7 +98,7 @@ const SlideTwo = () => {
       ) : problem === "Students" ? (
         <section className="main__right">
           <button onClick={() => setProblem("")}>Main Problem</button>
-          <p>Students Problems</p>
+          <Student/>
         </section>
       ) : problem === "Bootcamps" ? (
         <section className="main__right">
