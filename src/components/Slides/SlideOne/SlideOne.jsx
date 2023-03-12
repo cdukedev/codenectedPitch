@@ -1,5 +1,4 @@
 import React from "react";
-import "./SlideOne.scss";
 
 const SlideOne = () => {
   return (

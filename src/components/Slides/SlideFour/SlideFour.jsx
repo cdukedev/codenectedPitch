@@ -1,5 +1,4 @@
 import React from "react";
-import "./SlideFour.scss";
 
 const SlideFour = () => {
   return (

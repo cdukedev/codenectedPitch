@@ -1,5 +1,4 @@
 import React from "react";
-import "./SlideTwo.scss";
 import Box from "@mui/material/Box";
 import Card from "../../Card/Card.jsx";
 import Grid from "@mui/material/Grid";

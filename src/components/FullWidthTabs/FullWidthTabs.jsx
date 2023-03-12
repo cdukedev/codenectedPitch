@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./FullWidthTabs.scss";
 import PropTypes from "prop-types";
 import { useTheme } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
