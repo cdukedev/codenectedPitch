@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../../../assets/images/student-persona.png";
 import studentData from "../../../data/personas/students.json";
 
 const Student = () => {

@@ -4,10 +4,6 @@ import Card from "../../Card/Card.jsx";
 import Grid from "@mui/material/Grid";
 import CardActionArea from "@mui/material/CardActionArea";
 import { Button } from "@mui/material";
-import bootcamps from "../../../assets/images/bootcamps.png";
-import students from "../../../assets/images/students.png";
-import nonProfits from "../../../assets/images/non-profits.png";
-import smallBusinesses from "../../../assets/images/small-businesses.png";
 
 import { useState } from "react";
 import Student from "../../Persona/Student/Student.jsx";

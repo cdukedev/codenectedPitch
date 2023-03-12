@@ -2,7 +2,6 @@ import React from "react";
 
 import Card from "../../Card/Card.jsx";
 import Grid from "@mui/material/Grid";
-import image from "../../../assets/images/bootcamps.png";
 
 const SlideFive = () => {
   return (
