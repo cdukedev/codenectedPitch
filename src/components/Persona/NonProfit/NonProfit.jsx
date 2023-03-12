@@ -1,5 +1,5 @@
 import React from "react";
-import "./NonProfit.scss";
+import "../Student.scss";
 import image from "../../../assets/images/student-persona.png";
 import studentData from "../../../data/personas/non-profit.json";
 

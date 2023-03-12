@@ -1,5 +1,5 @@
 import React from "react";
-import "./Bootcamp.scss";
+import "../Student.scss";
 import image from "../../../assets/images/student-persona.png";
 import studentData from "../../../data/personas/bootcamps.json";
 
