@@ -7,11 +7,10 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import SlideOne from "../Slides/SlideOne/SlideOne";
-import SlideTwo from "../Slides/SlideTwo/SlideTwo";
+
 import SlideThree from "../Slides/SlideThree/SlideThree";
 import SlideFour from "../Slides/SlideFour/SlideFour";
 import SlideFive from "../Slides/SlideFive/SlideFive";
-import SlideSix from "../Slides/SlideSix/SlideSix";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -88,9 +87,7 @@ export default function FullWidthTabs() {
       <TabPanel value={value} index={0} dir={theme.direction}>
         <SlideOne />
       </TabPanel>
-      <TabPanel value={value} index={1} dir={theme.direction}>
-        <SlideTwo />
-      </TabPanel>
+      <TabPanel value={value} index={1} dir={theme.direction}></TabPanel>
       <TabPanel value={value} index={2} dir={theme.direction}>
         Component 3
       </TabPanel>
@@ -100,9 +97,7 @@ export default function FullWidthTabs() {
       <TabPanel value={value} index={4} dir={theme.direction}>
         Prototype
       </TabPanel>
-      <TabPanel value={value} index={5} dir={theme.direction}>
-        <SlideSix />
-      </TabPanel>
+      <TabPanel value={value} index={5} dir={theme.direction}></TabPanel>
     </Box>
   );
 }
