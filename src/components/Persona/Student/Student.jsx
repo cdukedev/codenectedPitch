@@ -13,7 +13,6 @@ const Student = () => {
   return (
     <section className="student">
       <div className="student__header">
-        <img className="student__header-img" src={image} alt="tech students" />
         <div className="student__card">
           <h2 className="student__title">Persona</h2>
           <ul className="student__list-items">

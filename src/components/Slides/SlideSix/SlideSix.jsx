@@ -12,7 +12,6 @@ const SlideFive = () => {
           <Card
             title="Non-Profits"
             description="Local Businesses in need of technology to help them achieve their goals"
-            image={image}
             imageTitle="design steps"
           />
         </a>
@@ -21,7 +20,6 @@ const SlideFive = () => {
         <Card
           title="Students"
           description="Local Businesses in need of technology to help them achieve their goals"
-          image={image}
           imageTitle="design steps"
         />
       </Grid>
@@ -29,7 +27,6 @@ const SlideFive = () => {
         <Card
           title="Bootcamps"
           description="Local Businesses in need of technology to help them achieve their goals"
-          image={image}
           imageTitle="design steps"
         />
       </Grid>

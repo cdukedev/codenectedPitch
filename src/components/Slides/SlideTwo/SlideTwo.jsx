@@ -69,7 +69,6 @@ const SlideTwo = () => {
                 className="main__card"
                 title="Non-Profits"
                 description="Local Businesses in need of technology to help them achieve their goals"
-                image={nonProfits}
                 imageTitle="design steps"
               />
             </CardActionArea>
@@ -78,7 +77,6 @@ const SlideTwo = () => {
                 className="main__card"
                 title="Students"
                 description="Local Businesses in need of technology to help them achieve their goals"
-                image={students}
                 imageTitle="design steps"
               />
             </CardActionArea>
@@ -87,7 +85,6 @@ const SlideTwo = () => {
                 className="main__card"
                 title="Bootcamps"
                 description="Local Businesses in need of technology to help them achieve their goals"
-                image={bootcamps}
                 imageTitle="design steps"
               />
             </CardActionArea>
@@ -99,7 +96,6 @@ const SlideTwo = () => {
                 className="main__card"
                 title="Small Businesses"
                 description="Local Businesses in need of technology to help them achieve their goals"
-                image={smallBusinesses}
                 imageTitle="design steps"
               />
             </CardActionArea>
