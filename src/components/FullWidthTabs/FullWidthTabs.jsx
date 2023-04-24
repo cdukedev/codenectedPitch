@@ -1,4 +1,8 @@
 import * as React from "react";
+import { useContext } from "react";
+import { MenuContext } from "../../context/MenuContext";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import "./FullWidthTabs.scss";
 import PropTypes from "prop-types";
 import { useTheme } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
@@ -48,17 +52,34 @@ function a11yProps(index) {
 }
 
 export default function FullWidthTabs() {
+  const { value, setValue } = useContext(MenuContext);
   const theme = useTheme();
-  const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
-  const handleChangeIndex = (index) => {
-    setValue(index);
-  };
-
+  const tabs = (
+    <Tabs
+      value={value}
+      onChange={handleChange}
+      width="100vw"
+      justifyContent="center"
+      alignContent="center"
+      indicatorColor="secondary"
+      textColor="inherit"
+      variant="fullWidth"
+      aria-label="full width tabs example"
+    >
+      <Tab label="Mission" {...a11yProps(0)} />
+      <Tab label="Who We Help" {...a11yProps(1)} />
+      <Tab label="How We Help" {...a11yProps(2)} />
+      <Tab label="Market" {...a11yProps(3)} />
+      <Tab label="Competition" {...a11yProps(4)} />
+      <Tab label="ProtoTypes & WireFrames" {...a11yProps(5)} />
+    </Tabs>
+  );
+  const isNotMobile = useMediaQuery("(min-width:680px)");
   return (
     <Box
       sx={{
@@ -66,44 +87,21 @@ export default function FullWidthTabs() {
         width: "100vw",
       }}
     >
-      <AppBar position="static">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          width="100vw"
-          justifyContent="center"
-          alignContent="center"
-          indicatorColor="secondary"
-          textColor="inherit"
-          variant="fullWidth"
-          aria-label="full width tabs example"
-        >
-          <Tab label="Mission" {...a11yProps(0)} />
-          <Tab label="Who We Help" {...a11yProps(1)} />
-          <Tab label="How We Help" {...a11yProps(2)} />
-          <Tab label="Market" {...a11yProps(3)} />
-          <Tab label="Competition" {...a11yProps(4)} />
-          <Tab label="ProtoTypes & WireFrames" {...a11yProps(5)} />
-        </Tabs>
-      </AppBar>
-      <TabPanel
-        value={value}
-        index={0}
-        dir={theme.direction}
-      >
+      {isNotMobile && <AppBar position="static">{tabs}</AppBar>}{" "}
+      <TabPanel value={value} index={0} dir={theme.direction}>
         <SlideOne />
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>
         <SlideTwo />
       </TabPanel>
       <TabPanel value={value} index={2} dir={theme.direction}>
-        Component 3
+        <SlideThree />
       </TabPanel>
       <TabPanel value={value} index={3} dir={theme.direction}>
-        Component 4
+        <SlideFour />
       </TabPanel>
       <TabPanel value={value} index={4} dir={theme.direction}>
-        Prototype
+        <SlideFive />
       </TabPanel>
       <TabPanel value={value} index={5} dir={theme.direction}>
         <SlideSix />

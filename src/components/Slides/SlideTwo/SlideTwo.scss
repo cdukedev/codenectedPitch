@@ -1,21 +1,16 @@
 .main__container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .main__left{
-    width: 50%;
-    margin-right: 2vw;
-}
-.main__right{
-    width: 50%;
-    margin-left: 2vw;
+    width: 100%;
 }
 
+
 .main__right-main{
-  width: 50%;
+  width: 100%;
   background-color: (255, 107, 179, 0.15)#f5f5f5;
-  margin-left: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
