@@ -64,7 +64,7 @@ const Header = () => {
                 Competition
               </MenuItem>
               <MenuItem onClick={() => handleMenuItemClick(5)}>
-                ProtoTypes & WireFrames
+                Differentiators
               </MenuItem>
             </Menu>
           </>

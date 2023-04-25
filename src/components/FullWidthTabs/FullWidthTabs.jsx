@@ -16,6 +16,7 @@ import SlideThree from "../Slides/SlideThree/SlideThree";
 import SlideFour from "../Slides/SlideFour/SlideFour";
 import SlideFive from "../Slides/SlideFive/SlideFive";
 import SlideSix from "../Slides/SlideSix/SlideSix";
+import SlideSeven from "../Slides/SlideSeven/SlideSeven";
 import image from "../../assets/images/space.gif";
 
 function TabPanel(props) {
@@ -76,7 +77,8 @@ export default function FullWidthTabs() {
       <Tab label="How We Help" {...a11yProps(2)} />
       <Tab label="Market" {...a11yProps(3)} />
       <Tab label="Competition" {...a11yProps(4)} />
-      <Tab label="ProtoTypes & WireFrames" {...a11yProps(5)} />
+      <Tab label="Differentiators" {...a11yProps(5)} />
+      <Tab label="Metrics" {...a11yProps(6)} />
     </Tabs>
   );
   const isNotMobile = useMediaQuery("(min-width:680px)");
@@ -105,6 +107,9 @@ export default function FullWidthTabs() {
       </TabPanel>
       <TabPanel value={value} index={5} dir={theme.direction}>
         <SlideSix />
+      </TabPanel>
+      <TabPanel value={value} index={6} dir={theme.direction}>
+        <SlideSeven />
       </TabPanel>
     </Box>
   );
