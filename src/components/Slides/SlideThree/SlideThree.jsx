@@ -26,15 +26,13 @@ const SlideThree = () => {
       </div>
       <div className="top">
         <p className="top__text">
-          At CodeNected, we provide a platform that bridges the gap between
-          non-profit organizations, students, skilled volunteers, and
-          corporations. We streamline the onboarding process for non-profits,
-          identify their specific needs and challenges, and connect them with
-          students and skilled volunteers eager to contribute their expertise.
-          In partnership with corporations, we offer upskilling opportunities
-          for employees, strengthening their talent pipeline, and advancing
-          their CSR initiatives. Our platform fosters collaboration, growth, and
-          positive change, enabling all stakeholders to benefit and thrive.
+          We streamline the onboarding process for non-profits, identify their
+          specific needs and challenges, and connect them with students and
+          skilled volunteers eager to contribute their expertise. In partnership
+          with corporations, we offer upskilling opportunities for employees,
+          strengthening their talent pipeline, and advancing their CSR
+          initiatives. Our platform fosters collaboration, growth, and positive
+          change, enabling all stakeholders to benefit and thrive.
         </p>
       </div>
     </section>
