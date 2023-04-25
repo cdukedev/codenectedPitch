@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+strong{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.top{
+    height: 50%;
+    min-width: 18rem;
+    font-size: 1.3rem;
+    background-color: rgba(0, 107, 179, 0.15);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: .5rem;
+    &__text{
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        color: aliceblue;
+        background-color:"black";
+        padding-left: 1rem;
+        &-item{
+            margin: .5rem;
+            color: aliceblue;
+            margin-left: 1.5rem;
+    }
+}
+}
