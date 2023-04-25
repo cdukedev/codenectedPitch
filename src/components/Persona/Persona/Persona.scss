@@ -1,4 +1,4 @@
-.student {
+.persona {
     height: 97%;
     width: 100%;
     display: flex;
@@ -19,7 +19,7 @@
     }
     &__list{
         display: flex;
-        
+        flex-direction: row;
         &__items {
             width: 85%;
             height: 85%;
@@ -46,17 +46,17 @@
         backdrop-filter: blur(10px);
         display: flex;
         border-radius: 10px;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         margin-bottom: 4vh;
-        padding: 1rem;
+        padding: 2rem;
+        
     }
     &__bio {
         background-color: rgba(0, 107, 179, 0.15);
         backdrop-filter: blur(10px);
         border-radius: 10px;
         width: 100%;
-        padding: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
