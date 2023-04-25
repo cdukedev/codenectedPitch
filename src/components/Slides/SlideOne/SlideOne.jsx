@@ -15,7 +15,7 @@ const SlideOne = () => {
             impact the lives of their families, friends, coworkers, and
             neighbors. We have the potential to break down the barriers that
             prevent people from utilizing the total value of tech and make it
-            easier for everyone to contribute to the ways technology may have a
+            easier for everybody to contribute to the ways technology may have a
             more significant impact on local and scales and replicate these
             results globally. We are dedicated to fostering a diverse and
             inclusive community where individuals from all backgrounds can
