@@ -81,7 +81,7 @@ export default function FullWidthTabs() {
       <Tab label="Metrics" {...a11yProps(6)} />
     </Tabs>
   );
-  const isNotMobile = useMediaQuery("(min-width:680px)");
+  const isNotMobile = useMediaQuery("(min-width:925px)");
   return (
     <Box
       sx={{

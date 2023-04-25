@@ -13,7 +13,7 @@ const Header = () => {
   const { value, setValue } = useContext(MenuContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const isMobile = useMediaQuery("(max-width:680px)");
+  const isMobile = useMediaQuery("(max-width:925px)");
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
