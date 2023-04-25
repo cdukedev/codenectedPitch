@@ -11,9 +11,8 @@ import nonProfits from "../../../assets/images/non-profits.png";
 import smallBusinesses from "../../../assets/images/small-businesses.png";
 
 import { useState } from "react";
-import Student from "../../Persona/Student/Student.jsx";
-import NonProfit from "../../Persona/NonProfit/NonProfit.jsx";
-import Bootcamp from "../../Persona/Bootcamp/Bootcamp.jsx";
+import Persona from "../../Persona/Persona/Persona.jsx";
+import { Person } from "@mui/icons-material";
 
 const SlideTwo = () => {
   const [problem, setProblem] = useState("Main");
@@ -65,7 +64,7 @@ const SlideTwo = () => {
               >
                 <CardActionArea
                   sx={cards}
-                  style={{ minWidth: "30rem" }}
+                  style={{ minWidth: "14rem" }}
                   onClick={() => setProblem("Non-Profits")}
                 >
                   <Card
@@ -78,7 +77,7 @@ const SlideTwo = () => {
                 </CardActionArea>
                 <CardActionArea
                   sx={cards}
-                  style={{ minWidth: "30rem" }}
+                  style={{ minWidth: "14rem" }}
                   onClick={() => setProblem("Students")}
                 >
                   <Card
@@ -91,8 +90,8 @@ const SlideTwo = () => {
                 </CardActionArea>
                 <CardActionArea
                   sx={cards}
-                  style={{ minWidth: "30rem" }}
-                  onClick={() => setProblem("Bootcamps")}
+                  style={{ minWidth: "14rem" }}
+                  onClick={() => setProblem("coorp")}
                 >
                   <Card
                     //add styling
@@ -119,15 +118,15 @@ const SlideTwo = () => {
       ) : null}
       {problem === "Non-Profits" ? (
         <section className="main__right">
-          <NonProfit />
+          <Persona type="non-profit" />
         </section>
       ) : problem === "Students" ? (
         <section className="main__right">
-          <Student />
+          <Persona type="student" />
         </section>
-      ) : problem === "Bootcamps" ? (
+      ) : problem === "coorp" ? (
         <section className="main__right">
-          <Bootcamp />
+          <Persona type="coorp" />
         </section>
       ) : null}
     </main>
