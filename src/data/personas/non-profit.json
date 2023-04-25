@@ -1,28 +1,32 @@
 {
-    "Persona": {
-    "Age": 35,
-    "Education": "MBA degree",
-    "Hometown": "Detroit",
-    "Family": "Married, two children",
-    "Occupation": "Executive Director of a non-profit organization"
-    },
-    "Goals": [
-    "Improve the impact of the non-profit organization",
-    "Find new and innovative ways to provide services to the community",
-    "Seek funding opportunities to support the organization's programs",
-    "Build a network of like-minded individuals and organizations",
-    "Ensure financial sustainability of the organization"
-    ],
-    "Frustrations": [
-    "Lack of support and mentorship in the technology space",
-    "Finding technology solutions that meet the unique needs of their organization",
-    "Financial barriers to access resources and mentorship opportunities",
-    "Bringing ideas to life due to a lack of tools and support",
-    "Adopting and utilizing technology to improve operations and reach goals",
-    "Managing the organization's finances while supporting programs and services"
-    ],
-    "Biography": {
-    "Title": "Biography",
-    "Text": "Sarah Johnson is the Executive Director of a non-profit organization in Detroit. She is dedicated to improving the lives of those in her community and is constantly seeking new and innovative ways to do so. With an MBA degree, she has the knowledge and skills to run the organization, but struggles with finding technology solutions that meet the unique needs of her organization. Sarah is also faced with financial barriers that limit her ability to access resources and mentorship opportunities. Despite these challenges, she remains determined to bring her ideas to life and improve the impact of her organization."
-    }
-    }
+  "name": "Samantha \"Sam\" Johnson",
+  "age": 45,
+  "gender": "Female",
+  "occupation": "CEO of a Non-profit Organization",
+  "education": {
+    "Bachelor": "Social Work",
+    "Master": "Nonprofit Management"
+  },
+  "location": "Miami, Florida",
+  "demographics": {
+    "description": "Samantha Johnson, fondly called \"Sam\" by her colleagues, is a 45-year-old woman living in Chicago. She is the CEO of a thriving non-profit organization called \"Community Empowerment.\" Sam is passionate about creating change and empowering underserved communities. With her strong background in social work and business management, she brings a unique perspective and approach to addressing social challenges."
+  },
+  "psychographics": {
+    "description": "Sam is a dedicated, empathetic, and driven individual who is committed to making a difference in the lives of others. She values collaboration, innovation, and social justice. In her free time, Sam enjoys reading about social issues, attending conferences, and volunteering at local shelters."
+  },
+  "goals_and_needs": [
+    "Expand the reach and impact of her non-profit organization to empower more communities.",
+    "Secure sustainable funding sources to maintain and grow the organization's programs and services.",
+    "Develop and implement innovative solutions to address complex social issues effectively.",
+    "Advocate for public policy changes that benefit the communities her organization serves.",
+    "Foster a supportive and efficient work environment for her staff, minimizing turnover and maximizing productivity."
+  ],
+  "frustrations_and_pain_points": [
+    "Difficulty securing sufficient funding to support the organization's programs and initiatives.",
+    "Navigating bureaucracy, paperwork, and administrative tasks that detract from focusing on the organization's core mission.",
+    "High staff turnover due to the emotional nature of the work and relatively low pay compared to the for-profit sector.",
+    "Struggling to maintain a healthy work-life balance amidst the demands of running a non-profit organization.",
+    "Frustration with the slow pace of change when addressing deep-rooted social issues."
+  ],
+  "technological_proficiency": "Sam is comfortable with technology and adept at using various tools and software to manage her organization. She is familiar with project management tools."
+}

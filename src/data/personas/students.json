@@ -1,28 +1,31 @@
 {
-    "Persona": {
-        "Age": 19,
-        "Education": "Junior CS student",
-        "Hometown": "Miami",
-        "Family": "Single, lives with parents",
-        "Occupation": "Student with a part-time job"
-    },
-    "Goals": [
-        "Gain experience through projects.",
-        "Attending tech-related workshops and gathering knowledge of tech through them.",
-        "Finding projects/events locally.",
-        "Connecting with people with similar areas of interest through social media.",
-        "Balancing school and work life."
-    ],
-    "Frustrations": [
-        "Not having sufficient experience in tech projects.",
-        "I don't know where I can learn more.",
-        "“I don't want to look unprepared.”",
-        "“Sometimes I don't find what I'm looking for.”",
-        "“I have trouble finding projects I like.”",
-        "“None of my friends want to work with me.”"
-    ],
-    "Biography": {
-        "Title": "Biography",
-        "Text": "Erick Rodriguez is a computer science junior who wants to work in tech. He takes classes full-time and works in the evening as a server. He is interested in improving his coding skills and attends events he finds on social media and through friends. He finds it intimidating to apply to internships that interest him because he feels he hasn't acquired enough experience. He has tried to work on projects but doesn't have connections that want to work with him or the knowledge to work alone."
-    }
+  "name": "Alex Thompson",
+  "age": 21,
+  "gender": "Male",
+  "occupation": "College Student",
+  "education": {
+    "Pursuing Bachelor's degree": "Computer Science"
+  },
+  "location": "Miami, Florida",
+  "demographics": {
+    "description": "Alex Thompson is a 21-year-old male college student pursuing a degree in computer science at a university in Miami. He is passionate about technology and its potential to make a positive impact on society. Alex is eager to gain practical experience and enhance his technical skills to kickstart his career in the tech industry."
+  },
+  "psychographics": {
+    "description": "Alex is a curious, motivated, and hardworking individual who values hands-on learning and real-world experiences. He enjoys collaborating with his peers and exploring new technologies and programming languages. In his free time, Alex likes to participate in hackathons, attend tech meetups, and explore online courses to expand his knowledge and skills."
+  },
+  "goals_and_needs": [
+    "Gain practical experience by working on real-world projects to enhance technical skills and employability.",
+    "Connect with industry professionals, mentors, and potential employers to build a strong professional network.",
+    "Discover various tech fields and potential career paths to make informed decisions about future.",
+    "Acquire certifications and endorsements to validate skills and competencies in specific technologies.",
+    "Improve problem-solving abilities and teamwork skills to excel in collaborative environments."
+  ],
+  "frustrations_and_pain_points": [
+    "Limited access to relevant internships and job opportunities that align with interests and skillset.",
+    "Difficulty connecting with industry professionals and experienced mentors for guidance and support.",
+    "Feeling overwhelmed by the vast array of technologies and career paths available in the tech industry.",
+    "Lack of practical, hands-on experience due to the theoretical nature of college coursework.",
+    "Balancing academic workload and extracurricular activities to gain practical experience and develop new skills."
+  ],
+  "technological_proficiency": "Alex is highly proficient with technology, having experience in programming languages such as Python, Java, and JavaScript. He is familiar with version control systems like Git and has worked on projects using web development frameworks and libraries."
 }
