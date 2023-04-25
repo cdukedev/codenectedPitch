@@ -1,0 +1,14 @@
+.table {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  
+  /* Custom styles for smaller screens */
+  @media (max-width: 600px) {
+    .table .MuiTableCell-root {
+      font-size: 0.8rem;
+      padding: 4px;
+    }
+  }
+  
