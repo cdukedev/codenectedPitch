@@ -65,49 +65,41 @@ const SlideTwo = () => {
               >
                 <CardActionArea
                   sx={cards}
+                  style={{ minWidth: "30rem" }}
                   onClick={() => setProblem("Non-Profits")}
                 >
                   <Card
                     className="main__card"
                     title="Non-Profits"
-                    description="Local Businesses in need of technology to help them achieve their goals"
+                    description="Non-profits, especially small and grassroots organizations, require support in technology, capacity building, and digital transformation to achieve their missions."
                     image={nonProfits}
                     imageTitle="design steps"
                   />
                 </CardActionArea>
                 <CardActionArea
                   sx={cards}
+                  style={{ minWidth: "30rem" }}
                   onClick={() => setProblem("Students")}
                 >
                   <Card
                     className="main__card"
                     title="Students"
-                    description="Local Businesses in need of technology to help them achieve their goals"
+                    description="Students seek hands-on experience, skill development, and networking through building projects and internship opportunities."
                     image={students}
                     imageTitle="design steps"
                   />
                 </CardActionArea>
                 <CardActionArea
                   sx={cards}
+                  style={{ minWidth: "30rem" }}
                   onClick={() => setProblem("Bootcamps")}
                 >
                   <Card
+                    //add styling
                     className="main__card"
-                    title="Bootcamps"
-                    description="Local Businesses in need of technology to help them achieve their goals"
+                    title="Coorporation"
+                    description="Corporations can boost talent pipeline, CSR, and employee upskilling through partnerships, enhancing reputation and satisfaction."
                     image={bootcamps}
-                    imageTitle="design steps"
-                  />
-                </CardActionArea>
-                <CardActionArea
-                  sx={cards}
-                  onClick={() => setProblem("Small-Businesses")}
-                >
-                  <Card
-                    className="main__card"
-                    title="Small Businesses"
-                    description="Local Businesses in need of technology to help them achieve their goals"
-                    image={smallBusinesses}
                     imageTitle="design steps"
                   />
                 </CardActionArea>
@@ -116,17 +108,11 @@ const SlideTwo = () => {
           </section>
           <section className="main__right-main">
             <p className="main__right-main-text">
-              The technology industry is constantly evolving and growing, but
-              not everyone has equal access to the resources and opportunities
-              to participate in this growth. This disparity affects not only
-              individuals but also small businesses and non-profit organizations
-              in under-served communities, who struggle to keep up with the
-              rapid pace of technological advancements. Meanwhile, students
-              interested in pursuing a career in technology face a number of
-              challenges, including a lack of experience in real-world tech
-              projects and difficulty finding meaningful opportunities to gain
-              experience. This, in turn, affects their ability to build a
-              desirable resume and to make a positive impact in the world.
+              Corporate needs focus on boosting talent pipeline, CSR, and
+              upskilling through partnerships for reputation continued growth.
+              Students pursue real world experience, project experience and
+              internships. Non-profits require support in developing impactful
+              projects and services through technology and capacity building.
             </p>
           </section>
         </>
