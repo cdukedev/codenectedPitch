@@ -1,0 +1,95 @@
+.persona {
+    height: 97%;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 107, 179, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        margin: 0;
+        padding: 0;
+        padding-left: 2rem;
+    }
+
+    &__list {
+        display: flex;
+
+        &__items {
+            width: 85%;
+            height: 85%;
+        }
+    }
+
+    &__header {
+        background-color: rgba(0, 107, 179, 0.15);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        height: 35%;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 4vh;
+
+        &-img {
+            width: 50%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    &__body-container {
+        background-color: rgba(0, 107, 179, 0.15);
+        backdrop-filter: blur(10px);
+        display: flex;
+        border-radius: 10px;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 4vh;
+        padding: 1rem;
+    }
+
+    &__bio,
+    &__psychographics,
+    &__tech-proficiency {
+        background-color: rgba(0, 107, 179, 0.15);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+        }
+
+        &-text {
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+    }
+}
