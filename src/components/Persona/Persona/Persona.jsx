@@ -1,6 +1,8 @@
 import React from "react";
 import "./Persona.scss";
-// import image from "../../assets/images/persona.png";
+import studentImage from "../../../assets/images/personas/student.png";
+import nonProfitImage from "../../../assets/images/personas/non-profit.png";
+import coorpImage from "../../../assets/images/personas/coorp.png";
 import nonProfitData from "../../../data/personas/non-profit.json";
 import studentData from "../../../data/personas/students.json";
 import coorpData from "../../../data/personas/coorp.json";
@@ -13,6 +15,12 @@ const Persona = ({ type }) => {
       : type === "student"
       ? studentData
       : coorpData;
+  const image =
+    type === "non-profit"
+      ? nonProfitImage
+      : type === "student"
+      ? studentImage
+      : coorpImage;
 
   const {
     name,
@@ -35,7 +43,7 @@ const Persona = ({ type }) => {
   return (
     <section className="persona">
       <div className="persona__header">
-        <img className="persona__header-img" src={"image"} alt="persona" />
+        <img className="persona__header-img" src={image} alt="persona" />
         <div className="persona__card">
           <h2 className="persona__title">Persona</h2>
           <ul className="persona__list-items">
