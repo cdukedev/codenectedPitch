@@ -30,7 +30,9 @@ const Header = () => {
 
   return (
     <header className="header">
-      <img className="header__img" src={logo} alt="Codenected Logo" />
+      <a href="https://www.codenected.live/">
+        <img className="header__img" src={logo} alt="Codenected Logo" />
+      </a>
       <nav className="header__nav">
         {isMobile && ( // Render the menu icon and the menu only if the screen is mobile
           <>
@@ -65,6 +67,9 @@ const Header = () => {
               </MenuItem>
               <MenuItem onClick={() => handleMenuItemClick(5)}>
                 Differentiators
+              </MenuItem>
+              <MenuItem onClick={() => handleMenuItemClick(6)}>
+                Metrics
               </MenuItem>
             </Menu>
           </>
